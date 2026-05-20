@@ -1,7 +1,7 @@
 # Exp 3 Sobel edge detection filter using CUDA to enhance the performance of image processing tasks
 
-### ENTER YOUR NAME: AHALYA S
-### REGISTER NO: 212223230006
+### ENTER YOUR NAME:Rithika K
+### REGISTER NO: 212224230230
 
 ## Background: 
   - The Sobel operator is a popular edge detection method that computes the gradient of the image intensity at each pixel. It uses convolution with two kernels to determine the gradient in both the x and y directions. 
@@ -171,25 +171,20 @@ int main() {
 ```
 
 ## Output Explanation
+<img width="887" height="443" alt="image" src="https://github.com/user-attachments/assets/7ee49a34-6222-4384-afb9-324a704b22bd" />
+The program detects the edges present in the input image using the Sobel filter.
+<img width="982" height="431" alt="image" src="https://github.com/user-attachments/assets/816bae93-0d5d-4ccc-b405-cde84fab87c6" />
 
-| Original 	|  Output using Cuda |
-|:-:	|:-:	|
-| ![creative2](https://github.com/user-attachments/assets/4ebd5792-49d3-4302-8363-0948d56ea11d) | <img width="513" height="401" alt="image" src="https://github.com/user-attachments/assets/d2c51980-937b-4288-9ed7-e97578c7414c" /> |
 
-| Original 	|  Output using OpenCV |
-|:-:	|:-:	|
-| ![creative2](https://github.com/user-attachments/assets/161d1698-49cd-4808-8423-bb55aad3f4fb) | <img width="513" height="338" alt="image" src="https://github.com/user-attachments/assets/969b837c-a34f-45b5-a15b-e9f673de5663" /> |
+White regions in the output represent edges and object boundaries.
 
-- **Sample Execution Results**:
-  - **CUDA Execution Times (Sobel filter) AND OpenCV Execution Time**
-  </br>
-<img width="250" height="56" alt="image" src="https://github.com/user-attachments/assets/bc42154f-6124-4fdf-9129-d7e53a82377c" />
+Black regions represent smooth areas with little intensity change.
 
-- **Graph Analysis**:
-  - Displayed a graph showing the relationship between image size, block size, and execution time.
- </br>
+The Sobel operator calculates horizontal and vertical edge changes using Gx and Gy.
 
-<img width="585" height="468" alt="image" src="https://github.com/user-attachments/assets/1cf9bb69-5174-4af7-99f7-abb590647d89" />
+CUDA is used to process pixels in parallel on the GPU, making execution faster.
+
+The output image output_sobel.jpeg shows the detected edges of the original image successfully.
 
 
 ## Answers to Questions
